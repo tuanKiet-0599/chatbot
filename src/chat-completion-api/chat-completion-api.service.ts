@@ -15,7 +15,7 @@ export class ChatCompletionApiService {
         this.chatHistory = new ChatHistoryManager();
         this.chat = new ChatOpenAI({
             temperature: DEFAULT_TEMPERATURE,
-            openAIApiKey: config.get<string>('OPENAI_CHATGPT')
+            openAIApiKey: config.get<string>('CHAT_BOT')
         })
     }
 
